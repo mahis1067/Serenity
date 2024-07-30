@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="title">Welcome to Serenity, <br> <span class="name">{{ name }}</span></h1>
+<p class="caption">Click on the products to buy.</p>
+<a class="largebutton" href="{{ url_for('text') }}">Feeling Pain? Take our Diagnosis Test</a>
+
+<div class="carousel-container">
+  <div class="carousel">
+    <a href="https://shop.shoppersdrugmart.ca/deep-relief-ice-gel-muscle-and-joint-pain-relief-reduces-inflammation/p/BB_057521004543?variantCode=057521004543">
+      <img src="{{ url_for('static', filename='image6.jpg') }}" class="visible">
+    </a>
+    
+    <a href="https://shop.shoppersdrugmart.ca/tylenol-muscle-aches-and-body-pain-relief/p/BB_064541308063?variantCode=064541308063"><img src="{{ url_for('static', filename='image1.jpg') }}" class="hidden"></a>
+    
+    <a href="https://www.amazon.ca/Glucosamine-Joint-Supplement-Chondroitin-Turmeric/dp/B0CCMTQCD6?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A3UY592VMGYQM6&th=1"><img src="{{ url_for('static', filename='image2.jpg') }}" class="hidden"></a>
+
+    <a href="https://www.londondrugs.com/aspirin-325mg-tablets---24s/L0375931.html?utm_source=google&utm_medium=productfeed&utm_campaign=surfaces"><img src="{{ url_for('static', filename='image3.jpg') }}" class="hidden"></a>
+
+    <a href="https://www.amazon.ca/Kyolic-Garlic-Extract-Cardiovascular-Formula/dp/B001E0YIWG?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A16APX8I1Q31MO"><img src="{{ url_for('static', filename='image4.jpg') }}" class="hidden"></a>
+
+    <a href="https://shop.shoppersdrugmart.ca/gravol-easy-to-swallow-tablets-50-mg/p/BB_058738325551?variantCode=058738325551"><img src="{{ url_for('static', filename='image5.jpg') }}" class="hidden"></a>
+
+    <a href="https://shop.shoppersdrugmart.ca/tylenol-muscle-aches-and-body-pain-relief/p/BB_064541308063?variantCode=064541308063"><img src="{{ url_for('static', filename='image6.jpg') }}" class="hidden"></a>
+
+    <a href="https://shop.shoppersdrugmart.ca/gravol-easy-to-swallow-tablets-50-mg/p/BB_058738325551?variantCode=058738325551"><img src="{{ url_for('static', filename='image7.jpg') }}" class="hidden"></a>
+
+    <a href="https://shop.shoppersdrugmart.ca/pepto-bismol-pepto-bismol-liquid-original-flavor-480ml/p/PB69?variantCode=056100008729"><img src="{{ url_for('static', filename='image8.jpg') }}" class="hidden"></a>
+  </div>
+  <p class="carousel-caption">Click on the products to buy them.</p>
+</div>
+
+
+
+
+{% endblock %}

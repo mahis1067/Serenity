@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisechat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='background.jpg') }}" class="background"> 
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('sign') }}">Sign Up</a>
+        <a href="{{ url_for('text') }}">Diagnosis and Forum</a>
+    </nav>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        Terms and Conditions
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('.carousel img');
+    const links = document.querySelectorAll('.carousel a');
+    let currentImageIndex = 0;
+
+    setInterval(() => {
+        images[currentImageIndex].classList.remove('visible');
+        images[currentImageIndex].classList.add('hidden');
+        links[currentImageIndex].classList.add('hidden');
+
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+
+        images[currentImageIndex].classList.remove('hidden');
+        images[currentImageIndex].classList.add('visible');
+        links[currentImageIndex].classList.remove('hidden');
+    }, 3000); 
+    });
+</script>
+
+    </script>
+    
+</body>
+</html>
